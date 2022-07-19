@@ -11,6 +11,10 @@
 		9675DE84287913D50064D39D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9675DE83287913D50064D39D /* ContentView.swift */; };
 		9675DE86287913D90064D39D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9675DE85287913D90064D39D /* Assets.xcassets */; };
 		9675DE89287913D90064D39D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9675DE88287913D90064D39D /* Preview Assets.xcassets */; };
+		96802BA4287E3E650020BC1B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96802BA3287E3E650020BC1B /* Camera.swift */; };
+		96E9EA2228850E7A0063ED27 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E9EA2128850E7A0063ED27 /* DataModel.swift */; };
+		96E9EA24288746D30063ED27 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E9EA23288746D20063ED27 /* CameraPreviewView.swift */; };
+		96E9EA2628874B2B0063ED27 /* CameraControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E9EA2528874B2B0063ED27 /* CameraControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		9675DE83287913D50064D39D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9675DE85287913D90064D39D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9675DE88287913D90064D39D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96802BA3287E3E650020BC1B /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		96E9EA2128850E7A0063ED27 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		96E9EA23288746D20063ED27 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		96E9EA2528874B2B0063ED27 /* CameraControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				9675DE81287913D50064D39D /* HeartRateMonitorApp.swift */,
 				9675DE83287913D50064D39D /* ContentView.swift */,
+				96E9EA23288746D20063ED27 /* CameraPreviewView.swift */,
+				96E9EA2528874B2B0063ED27 /* CameraControlView.swift */,
+				96802BA3287E3E650020BC1B /* Camera.swift */,
+				96E9EA2128850E7A0063ED27 /* DataModel.swift */,
 				9675DE85287913D90064D39D /* Assets.xcassets */,
 				9675DE87287913D90064D39D /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9675DE84287913D50064D39D /* ContentView.swift in Sources */,
+				96E9EA2228850E7A0063ED27 /* DataModel.swift in Sources */,
+				96E9EA24288746D30063ED27 /* CameraPreviewView.swift in Sources */,
 				9675DE82287913D50064D39D /* HeartRateMonitorApp.swift in Sources */,
+				96802BA4287E3E650020BC1B /* Camera.swift in Sources */,
+				96E9EA2628874B2B0063ED27 /* CameraControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +286,13 @@
 				DEVELOPMENT_TEAM = 8U2C4M25TS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used to measure variations in your finger's color/translucency";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +317,13 @@
 				DEVELOPMENT_TEAM = 8U2C4M25TS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The camera is used to measure variations in your finger's color/translucency";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
